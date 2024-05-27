@@ -1,1 +1,67 @@
+/*Francisco Morales 281497 Bruno Tourn 327437*/
+body h1, h3, h2{
+    text-align: center;
+}
+
+
+header {
+    background:#fea273;  
+    
+}
+header ul{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    word-spacing: 5px;
+}
+nav {
+    background-color:#f8f3df ;
+}
+nav h1 {
+    border-bottom: 4px solid #f1ead7; 
+    padding: 10px;
+    border-top: 2px solid #f1ead7;
+}
+
+article {
+    background-color:#fed28b ;
+}
+article h1{
+    border-bottom: 4px solid #faca80; 
+    padding: 10px;
+    border-top: 2px solid #faca80;
+}
+article labeln{
+    margin-right: 150px;
+}
+article labeld{
+    margin-right: 150px ;
+}
+article select{
+    width: 200px;
+}
+article label2{
+    margin-right: 100px;
+}
+article label3{
+    margin-right: 100px;
+}
+article labelt{
+    margin-right: 5px;
+}
+article th, td {
+    padding: 12px;
+    border-bottom: 5px solid #ddd;
+}
+footer {
+    background-color:#ffdac7;
+}
+footer h1,h2 {
+    border-bottom: 4px solid #fad5c2 ;
+    padding: 10px;
+    border-top: 2px solid #fad5c2;
+}
+
 
