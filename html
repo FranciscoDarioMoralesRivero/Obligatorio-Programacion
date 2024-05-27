@@ -12,17 +12,7 @@
         <div class="titulo"><img src="img/titulo.png" alt="centered title"></div>
 	    <p class="centro">
 	    	<a id="general" href="#infoGeneral">Informacion General</a>
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
 	    	<a id="administrar" href="#gestion">Administrar</a>
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
-            &nbsp
 	    	<a id="jugar" href="#juego">¡Jugar!</a>
         </p>
     </header>
@@ -49,9 +39,9 @@
         <table class="article-table">
             <thead></thead>
             <tbody>
-                <td><label for="palabra">Nombre</label></td>
+                <td><label>Nombre</label></td>
                 <td><input type="text" id ="Nombre">
-                <label for="palabra">Descripción</label></td>
+                <label>Descripción</label></td>
                 <td><input type="text" id ="Descripcion">
                 <input type="button" id="Agregar" value="Agregar"></td>
             </tbody>
@@ -60,33 +50,33 @@
         <h3 class="centro"><b>Datos generales de temas</b></h3>
         <p>Lista de temas (total de temas: 0)</p>
         <ul>
-	        <li><label for="numero">Sin datos</label></li>
+	        <li><label>Sin datos</label></li>
         </ul>
         <p>Promedio de preguntas por tema (cantidad total de preguntas/cantidad total de temas): 
-            <label for="numero" id="promedioPreguntas">Sin datos</label>
+            <label id="promedioPreguntas">Sin datos</label>
         </p>
 	    <p>Total de preguntas</p>
         <ul>
-	        <li><label for="numero">Sin datos</label></li>
+	        <li><label>Sin datos</label></li>
         </ul>
 
         <h1 class="gestion-preguntas"><b>GESTIÓN DE PREGUNTAS</b></h1>
-        <h3><b>Alta de preguntas</b></h3>
+        <h3 class="centro"><b>Alta de preguntas</b></h3>
         <table class="article-table">
             <thead></thead>
             <tbody>
                 <tr>
-                    <td><label for="tema">Tema</label></td>
+                    <td><label>Tema</label></td>
                     <td><select name="tema" class="select"></select>
-                    <label for="nivel">Nivel</label></td>
+                    <label>Nivel</label></td>
                     <td><input type="number" class="number" id="nivel"></td>
                 </tr>
                 <tr>
-                    <td><label for="Texto">Texto de la pregunta</label></td>
+                    <td><label>Texto de la pregunta</label></td>
                     <td><input type="text" id ="textoPregunta">
-                    <label for="Respuesta">Respuesta correcta</label></td>
+                    <label>Respuesta correcta</label></td>
                     <td><input type="text" id ="respuestaCorrecta">
-                    <label for="respuestasIncorrectas">Respuestas incorrectas</label>
+                    <label>Respuestas incorrectas</label>
                     <input type="text" id="respuestasIncorrectas">
                     <input type="button" id="agregarPregunta" value="Agregar"></td>
                 </tr>
@@ -95,16 +85,16 @@
 
         <h3 class="centro"><b>Datos generales de preguntas</b></h3>
         <p>Total de preguntas registradas: 
-            <label for="numero" id="totalPreguntas">0</label> preguntas
+            <label id="totalPreguntas">0</label> preguntas
         </p>
         <p>Máximo puntaje obtenido por un jugador: 
-            <label for="numero" id="puntaje">sin datos</label>
+            <label id="puntaje">sin datos</label>
         </p>
         <p>Preguntas registradas: 
             <input type="radio" id="radioButton1" name="radio1" value="Orden nombre tema creciente/nivel creciente">
-            <label for="radioButton1">Orden nombre tema creciente/nivel creciente</label>
+            <label id="creciente">Orden nombre tema creciente/nivel creciente</label>
             <input type="radio" id="radioButton2" name="radio2" value="Orden nombre tema decreciente/nivel creciente">
-            <label for="radioButton2">Orden nombre tema decreciente/nivel creciente</label>
+            <label id="decreciente">Orden nombre tema decreciente/nivel creciente</label>
         </p>
         <br>
         <br>
@@ -127,9 +117,9 @@
         <h3 class="centro"><b>Configuración</b></h3>
         <table class="game-table">
             <tbody>
-                <td><label for="temaAElegir">Tema a elegir</label></td>
+                <td><label id="temaAElegir">Tema a elegir</label></td>
                 <td><select name="temaAElegir" class="select"></select>
-                <label for="nivelDelJuego">Nivel del juego</label></td>
+                <label id="nivelDelJuego">Nivel del juego</label></td>
                 <td><input type="number" class="number" id="nivelDelJuego" value="1">
                 <input type="button" id="jugar" value="Jugar"></td>
             </tbody>
@@ -137,7 +127,7 @@
 
         <h3 class="centro"><b>Juego</b></h3>
         <p>Puntaje acumulado en esta partida: 
-            <label for="numero" id="ultimoPuntaje">0</label>
+            <label id="ultimoPuntaje">0</label>
         </p>
         <p>La pregunta es...!</p>
         <p class="preguntas">
