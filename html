@@ -1,102 +1,161 @@
+<!-- Bruno Tourn - 327437 y Francisco Morales - 281497-->
+
 <!doctype html> 
 <html lang="es"> 
 <head> 
     <meta charset="utf-8"> 
-    <title>Ejemplo con varios elementos</title> 
+    <title>Obligatorio 1 - Programación 1</title> 
+    <link rel="stylesheet" href="css/estilos.css">
 </head> 
 <body> 
     <header>
-	    <ul>
-            <img src="img/titulo.png">
-            <br>
-	    	<a href="informacionGeneral">Informacion General</a>
-	    	<a href="administrar">Administrar</a>
-	    	<a href="jugar">¡Jugar!</a>
-        </ul>
+        <div class="titulo"><img src="img/titulo.png" alt="centered title"></div>
+	    <p class="centro">
+	    	<a id="general" href="#infoGeneral">Informacion General</a>
+            &nbsp
+            &nbsp
+            &nbsp
+            &nbsp
+            &nbsp
+	    	<a id="administrar" href="#gestion">Administrar</a>
+            &nbsp
+            &nbsp
+            &nbsp
+            &nbsp
+            &nbsp
+	    	<a id="jugar" href="#juego">¡Jugar!</a>
+        </p>
     </header>
 
     <nav>
-        <h1><b>Descripción general</b></h1> 
-        <h3><b>¿Qué encontrarás en este sitio?</b></h3>
+        <h1 id="infoGeneral" class="descripcion-general"><b>DESCRIPCIÓN GENERAL</b></h1> 
+        <h3 class="centro"><b>¿Qué encontrarás en este sitio?</b></h3>
         <p>En este sitio podrás crear temas, preguntas y jugar a nuestra versión del conocido juego de Trivia.</p>
         <p>Es una prueba de conocimientos generales con preguntas y respuestas.</p>
         <p>Cada tema tiene un nombre y una descripción. Cada pregunta es de un tema, tiene un nivel (1-muy fácil, …, 5-muy difícil), un texto que la describe y te aparecerán varias respuestas, pero una sola es la correcta. Si la respondes bien suma 10 puntos, por cada error pierdes un punto, ¡pero puede usar la ayuda!</p>
         <p>El sitio fue desarrollado en el 1er. semestre 2024 - Programación I - Universidad ORT Uruguay por:</p>
-        <img src="/img/imagenestudiante1.jpeg" alt="Bruno Tourn - 327437 y">
-        <img src="/img/imagenestudiante2.jpeg" alt="Francisco Morales - 281497">
+        <div>
+            <img class="student" src="img/imagenestudiante1.jpeg" alt="Bruno Tourn" style="float: left;"> 
+            <div>Bruno Tourn - 327437 y</div>
+            <img class="student" src="img/imagenestudiante2.jpeg" alt="Francisco Morales" style="float: left;">
+            <div>Francisco Morales - 281497</div>
+        </div>
+        <br>
     </nav>
 
     <article>
-        <h1><b>Gestion de temas</b></h1>
-        <h3><b>Alta de temas</b></h3>
-        <label for="palabra">Nombre</label>
-        <input type="text" id ="Nombre">
-        <label for="palabra">Descripción</label>
-        <input type="text" id ="Descripcion">
-        <input type="button" id="Agregar" value="Agregar">
-        <h3><b>Datos generales de temas</b></h3>
+        <h1 id="gestion" class="gestion-temas"><b>GESTIÓN DE TEMAS</b></h1>
+        <h3 class="centro"><b>Alta de temas</b></h3>
+        <table class="article-table">
+            <thead></thead>
+            <tbody>
+                <td><label for="palabra">Nombre</label></td>
+                <td><input type="text" id ="Nombre">
+                <label for="palabra">Descripción</label></td>
+                <td><input type="text" id ="Descripcion">
+                <input type="button" id="Agregar" value="Agregar"></td>
+            </tbody>
+        </table>
+
+        <h3 class="centro"><b>Datos generales de temas</b></h3>
         <p>Lista de temas (total de temas: 0)</p>
-        <ul></ul>
-	    <li>Sin datos</li>
-        <p>Promedio de preguntas por tema (cantidad total de preguntas/cantidad total de temas): Sin datos</p>
+        <ul>
+	        <li><label for="numero">Sin datos</label></li>
+        </ul>
+        <p>Promedio de preguntas por tema (cantidad total de preguntas/cantidad total de temas): 
+            <label for="numero" id="promedioPreguntas">Sin datos</label>
+        </p>
 	    <p>Total de preguntas</p>
-        <ul></ul>
-	    <li>Sin datos</li>
+        <ul>
+	        <li><label for="numero">Sin datos</label></li>
+        </ul>
 
-        <h1><b>Gestión de Preguntas</b></h1>
+        <h1 class="gestion-preguntas"><b>GESTIÓN DE PREGUNTAS</b></h1>
         <h3><b>Alta de preguntas</b></h3>
-        <label for="tema">Tema</label>
-        <select name="tema"></select>
-        <label for="nivel">Nivel</label>
-        <input type="text" id="nivel">
-        <br>
-        <label for="Texto">Texto de la pregunta</label>
-        <input type="text" id ="texto">
-        <label for="Respuesta">Respuesta correcta</label>
-        <input type="text" id ="Respuesta Correcta">
-        <label for="Respuesta Incorrecta">Respuesta incorrecta</label>
-        <input type="button" id="Agregar"value="Agregar">
+        <table class="article-table">
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td><label for="tema">Tema</label></td>
+                    <td><select name="tema" class="select"></select>
+                    <label for="nivel">Nivel</label></td>
+                    <td><input type="number" class="number" id="nivel"></td>
+                </tr>
+                <tr>
+                    <td><label for="Texto">Texto de la pregunta</label></td>
+                    <td><input type="text" id ="textoPregunta">
+                    <label for="Respuesta">Respuesta correcta</label></td>
+                    <td><input type="text" id ="respuestaCorrecta">
+                    <label for="respuestasIncorrectas">Respuestas incorrectas</label>
+                    <input type="text" id="respuestasIncorrectas">
+                    <input type="button" id="agregarPregunta" value="Agregar"></td>
+                </tr>
+            </tbody>
+        </table>
 
-        <h3><b>Datos generales de preguntas</b></h3>
-        <p>Total de preguntas registradas: 0 preguntas</p>
-        <p>Máximo puntaje obtenido por un jugador: sin datos</p>
-        <p>Preguntas registradas: </p>
-        <input type="radio" id="radioButton1" name="radio1" value="Orden nombre tema creciente/nivel creciente">
-        <label for="radioButton1">Orden nombre tema creciente/nivel creciente</label>
-        <input type="radio" id="radioButton2" name="radio2" value="Orden nombre tema decreciente/nivel creciente">
-        <label for="radioButton2">Orden nombre tema decreciente/nivel creciente</label>
+        <h3 class="centro"><b>Datos generales de preguntas</b></h3>
+        <p>Total de preguntas registradas: 
+            <label for="numero" id="totalPreguntas">0</label> preguntas
+        </p>
+        <p>Máximo puntaje obtenido por un jugador: 
+            <label for="numero" id="puntaje">sin datos</label>
+        </p>
+        <p>Preguntas registradas: 
+            <input type="radio" id="radioButton1" name="radio1" value="Orden nombre tema creciente/nivel creciente">
+            <label for="radioButton1">Orden nombre tema creciente/nivel creciente</label>
+            <input type="radio" id="radioButton2" name="radio2" value="Orden nombre tema decreciente/nivel creciente">
+            <label for="radioButton2">Orden nombre tema decreciente/nivel creciente</label>
+        </p>
         <br>
         <br>
-        <tr>
-            <th><b>Nombre del tema</b></th>
-            <th><b>Nivel</b></th> 
-            <th><b>Texto de la pregunta</b></th>
-            <th><b>Respuesta correcta</b></th> 
-            <th><b>Respuestas incorrectas</b></th> 
-        </tr>
+        <table class="datos-preguntas">
+            <thead>
+                <tr>
+                    <th><b>Nombre del tema</b></th>
+                    <th><b>Nivel</b></th> 
+                    <th><b>Texto de la pregunta</b></th>
+                    <th><b>Respuesta correcta</b></th> 
+                    <th><b>Respuestas incorrectas</b></th> 
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </article>  
 
     <footer>
-        <h2><b>¡A jugar!</b></h2>
-        <h3><b>Configuración</b></h3>
-        <label for="temaAElegir">Tema a elegir</label>
-        <select name="temaAElegir"></select>
-        <label for="nivelDelJuego">Nivel del juego</label>
-        <input type="number" id="nivelDelJuego">
-        <input type="button" id="jugar" value="Jugar">
+        <h2 id="juego" class="juego"><b>¡A JUGAR!</b></h2>
+        <h3 class="centro"><b>Configuración</b></h3>
+        <table class="game-table">
+            <tbody>
+                <td><label for="temaAElegir">Tema a elegir</label></td>
+                <td><select name="temaAElegir" class="select"></select>
+                <label for="nivelDelJuego">Nivel del juego</label></td>
+                <td><input type="number" class="number" id="nivelDelJuego" value="1">
+                <input type="button" id="jugar" value="Jugar"></td>
+            </tbody>
+        </table>
 
-        <h3><b>Juego</b></h3>
-        <p>Puntaje acumulado en esta partida: 0</p>
+        <h3 class="centro"><b>Juego</b></h3>
+        <p>Puntaje acumulado en esta partida: 
+            <label for="numero" id="ultimoPuntaje">0</label>
+        </p>
         <p>La pregunta es...!</p>
-        <p>TEXTO DE LA PREGUNTA</p>
-        <input type="button" id="buttonRespuesta1" value="Respuesta 1">
-        <input type="button" id="buttonRespuesta2" value="Respuesta 2">
-        <input type="button" id="buttonRespuesta3" value="Respuesta 3">
+        <p class="preguntas">
+            <p><input type="text" class="pregunta" value="TEXTO DE LA PREGUNTA"></p>
+            <input type="button" class="btn" id="buttonRespuesta1" value="Respuesta 1">
+            &nbsp;
+            &nbsp;
+            <input type="button" class="btn" id="buttonRespuesta2" value="Respuesta 2">
+            &nbsp;
+            &nbsp;
+            <input type="button" class="btn" id="buttonRespuesta3" value="Respuesta 3">
+            <br>
+            <br>
+            <input type="button" id="buttonAyuda" value="Ayuda">
+            <input type="button" id="buttonSiguientePregunta" value="Siguiente Pregunta">
+            <input type="button" id="buttonTerminar" value="Terminar">
+        </p>
         <br>
-        <br>
-        <input type="button" id="buttonAyuda" value="Ayuda">
-        <input type="button" id="buttonSiguientePregunta" value="Siguiente Pregunta">
-        <input type="button" id="buttonTerminar" value="Terminar">
     </footer>
 </body> 
 </html> 
