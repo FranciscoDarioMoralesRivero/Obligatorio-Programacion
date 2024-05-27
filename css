@@ -1,0 +1,141 @@
+/*Bruno Tourn - 327437 y Francisco Morales - 281497*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.centro {
+    text-align: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: #fca474;
+}
+
+nav{
+    background-color: #f4f4dc;
+}
+
+article{
+    background-color: #fcd48c ;
+}
+
+footer{
+    background-color:  #fcdcc4 ;
+}
+
+.btn {
+    background-color: #e47c24 ;
+    border: white;
+    padding: 8px 20px;
+    text-align: center;
+    color: white;
+}
+
+.pregunta {
+    background-color: #e47c24 ;
+    border: white;
+    padding: 8px 500px;
+    text-align: center;
+    color: white;
+}
+
+table {
+    width: 100%;
+    background-color: #fcd48c;
+    text-align: center;
+    border-color: black;
+}
+
+th {
+    border: solid 1px black;
+    background-color: white;
+}
+
+.datos-preguntas {
+    border: black 2px solid;
+    height: 150px;
+}
+
+select {
+    padding: 1px 74px;
+}
+
+.article-table {
+    background-color: #fcd48c;
+    text-align: left;
+    width: 90%;
+}
+
+.game-table {
+    background-color: #fcdcc4;
+    text-align: left;
+    width: 90%;
+}
+
+.number {
+    width: 50px;;
+}
+
+div {
+    display: flex ;
+    align-items: center;
+}
+
+.student {
+    margin-left: 25px;
+    margin-right: 10px;
+    border-radius: 50px;
+    width: 70px; 
+    height: 90px;
+}
+
+.descripcion-general {
+    text-align: center;
+    border-bottom: #e4e4cc  4px solid;
+    border-radius: 6px;
+}
+
+.gestion-temas {
+    border-bottom:  #f4c47c 4px solid;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.gestion-preguntas {
+    border-bottom:  #f4c47c 4px solid;
+    border-top:  #f4c47c 4px solid;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.juego {
+    border-bottom: #f4d4bc 4px solid;
+    border-radius: 6px;
+}
+
+h1 {
+    line-height: 2;
+}
+
+h2 {
+    line-height: 2;
+}
+
+.preguntas {
+    text-align: center;
+}
