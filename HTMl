@@ -1,22 +1,26 @@
+<!--Francisco Morales 281497, Bruno Tourn 327437-->
 <!doctype html> 
 <html lang="es"> 
 <head> 
     <meta charset="utf-8"> 
+    <link rel="stylesheet"  href="css/estilo.css"> 
     <title>Obligatorio 1 - Programación 1</title> 
 </head> 
 <body> 
     <header>
-	    <ul>
+        <ul>
             <img src="img/titulo.png">
+        </ul>
+	    <ul2>
             <br>
 	    	<a href="informacionGeneral">Informacion General</a>
 	    	<a href="administrar">Administrar</a>
 	    	<a href="jugar">¡Jugar!</a>
-        </ul>
+        </ul2>
     </header>
 
     <nav>
-        <h1><b>Descripción general</b></h1> 
+        <h1><b>DESCRIPCIÓN GENERAL</b></h1> 
         <h3><b>¿Qué encontrarás en este sitio?</b></h3>
         <p>En este sitio podrás crear temas, preguntas y jugar a nuestra versión del conocido juego de Trivia.</p>
         <p>Es una prueba de conocimientos generales con preguntas y respuestas.</p>
@@ -27,11 +31,11 @@
     </nav>
 
     <article>
-        <h1><b>Gestion de temas</b></h1>
+        <h1><b>GESTIÓN DE TEMAS</b></h1>
         <h3><b>Alta de temas</b></h3>
-        <label for="palabra">Nombre</label>
+        <labeln for="palabra">Nombre</labeln>
         <input type="text" id ="Nombre">
-        <label for="palabra">Descripción</label>
+        <labeld for="palabra">Descripción</labeld>
         <input type="text" id ="Descripcion">
         <input type="button" id="Agregar" value="Agregar">
         <h3><b>Datos generales de temas</b></h3>
@@ -43,15 +47,15 @@
         <ul></ul>
 	    <li>Sin datos</li>
 
-        <h1><b>Gestión de Preguntas</b></h1>
+        <h1><b>GESTIÓN DE PREGUNTAS</b></h1>
         <h3><b>Alta de preguntas</b></h3>
-        <label for="tema">Tema</label>
+        <label2 for="tema">Tema</label2>
         <select name="tema"></select>
-        <label for="nivel">Nivel</label>
+        <label3 for="nivel">Nivel</label3>
         <input type="text" id="nivel">
         <br>
-        <label for="Texto">Texto de la pregunta</label>
-        <input type="text" id ="texto">
+        <labelt for="Texto">Texto de la pregunta</labelt>
+        <input type="text" id ="textot">
         <label for="Respuesta">Respuesta correcta</label>
         <input type="text" id ="Respuesta Correcta">
         <label for="Respuesta Incorrecta">Respuesta incorrecta</label>
@@ -77,7 +81,7 @@
     </article>  
 
     <footer>
-        <h2><b>¡A jugar!</b></h2>
+        <h2><b>¡A JUGAR!</b></h2>
         <h3><b>Configuración</b></h3>
         <label for="temaAElegir">Tema a elegir</label>
         <select name="temaAElegir"></select>
