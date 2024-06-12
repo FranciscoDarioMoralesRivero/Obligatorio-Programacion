@@ -36,18 +36,13 @@
     <article>
         <h1 id="gestion" class="gestion-temas"><b>GESTIÓN DE TEMAS</b></h1>
         <h3 class="centro"><b>Alta de temas</b></h3>
-        <table class="article-table">
-            <thead>
-                <tr>
-                <th><label>Nombre</label></th>
-                <th><input type="text" id ="Nombre">
-                <label>Descripción</label></th>
-                <td><input type="text" id ="Descripcion">
-                <input type="button" id="Agregar" value="Agregar"></td>
-            </tr>
-            </thead>
-        </table>
-
+        
+        <label>Nombre</label>
+        <input type="text" id ="Nombre">
+        <label>Descripción</label>
+        <input type="text" id ="Descripcion">
+        <input type="button" id="Agregar" value="Agregar">
+                
         <h3 class="centro"><b>Datos generales de temas</b></h3>
         <p>Lista de temas (total de temas: 0)</p>
         <ul>
@@ -63,26 +58,20 @@
 
         <h1 class="gestion-preguntas"><b>GESTIÓN DE PREGUNTAS</b></h1>
         <h3 class="centro"><b>Alta de preguntas</b></h3>
-        <table class="article-table">
-            <thead></thead>
-            <tbody>
-                <tr>
-                    <td><label>Tema</label></td>
-                    <td><select name="tema" class="select"></select>
-                    <label>Nivel</label></td>
-                    <td><input type="number" class="number" id="nivel"></td>
-                </tr>
-                <tr>
-                    <td><label>Texto de la pregunta</label></td>
-                    <td><input type="text" id ="textoPregunta">
-                    <label>Respuesta correcta</label></td>
-                    <td><input type="text" id ="respuestaCorrecta">
-                    <label>Respuestas incorrectas</label>
-                    <input type="text" id="respuestasIncorrectas">
-                    <input type="button" id="agregarPregunta" value="Agregar"></td>
-                </tr>
-            </tbody>
-        </table>
+        <label>Tema</label>
+        <select name="tema" class="select"></select>
+        <label>Nivel</label>
+        <input type="number" class="number" id="nivel">
+        <br>
+        <br>
+        <label>Texto de la pregunta</label>
+        <input type="text" id ="textoPregunta">
+        <label>Respuesta correcta</label>
+        <input type="text" id ="respuestaCorrecta">
+        <label>Respuestas incorrectas</label>
+        <input type="text" id="respuestasIncorrectas">
+        <input type="button" id="agregarPregunta" value="Agregar">
+        
 
         <h3 class="centro"><b>Datos generales de preguntas</b></h3>
         <p>Total de preguntas registradas: 
