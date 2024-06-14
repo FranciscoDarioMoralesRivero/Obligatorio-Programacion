@@ -1,0 +1,148 @@
+<!-- Bruno Tourn - 327437 y Francisco Morales - 281497-->
+
+<!doctype html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Obligatorio 1 - Programación 1</title> 
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="js" href="js/datosPrueba.js">
+</head> 
+<body> 
+    <header>
+        <div class="titulo"><img src="img/titulo.png" alt="centered title"></div>
+	    <p class="centro">
+	    	<a id="general" href="#infoGeneral">Informacion General</a>
+	    	<a id="administrar" href="#gestion">Administrar</a>
+	    	<a id="jugar" href="#juego">¡Jugar!</a>
+        </p>
+    </header>
+
+    <nav>
+        <h1 id="infoGeneral" class="descripcion-general"><b>DESCRIPCIÓN GENERAL</b></h1> 
+        <h3 class="centro"><b>¿Qué encontrarás en este sitio?</b></h3>
+        <p>En este sitio podrás crear temas, preguntas y jugar a nuestra versión del conocido juego de Trivia.</p>
+        <p>Es una prueba de conocimientos generales con preguntas y respuestas.</p>
+        <p>Cada tema tiene un nombre y una descripción. Cada pregunta es de un tema, tiene un nivel (1-muy fácil, …, 5-muy difícil), un texto que la describe y te aparecerán varias respuestas, pero una sola es la correcta. Si la respondes bien suma 10 puntos, por cada error pierdes un punto, ¡pero puede usar la ayuda!</p>
+        <p>El sitio fue desarrollado en el 1er. semestre 2024 - Programación I - Universidad ORT Uruguay por:</p>
+        <div>
+            <img class="student" src="img/imagenestudiante1.jpeg" alt="Bruno Tourn" style="float: left;"> 
+            <div>Bruno Tourn - 327437 y</div>
+            <img class="student" src="img/imagenestudiante2.jpeg" alt="Francisco Morales" style="float: left;">
+            <div>Francisco Morales - 281497</div>
+        </div>
+        <br>
+    </nav>
+
+    <article>
+        <h1 id="gestion" class="gestion-temas"><b>GESTIÓN DE TEMAS</b></h1>
+        <h3 class="centro"><b>Alta de temas</b></h3>
+        
+        <label>Nombre</label>
+        <input type="text" id ="Nombre">
+        <label>Descripción</label>
+        <input type="text" id ="Descripcion">
+        <input type="button" id="Agregar" value="Agregar">
+                
+        <h3 class="centro"><b>Datos generales de temas</b></h3>
+        <p>Lista de temas (total de temas: 0)</p>
+        <ul>
+	        <li><label>Sin datos</label></li>
+        </ul>
+        <p>Promedio de preguntas por tema (cantidad total de preguntas/cantidad total de temas): 
+            <label id="promedioPreguntas">Sin datos</label>
+        </p>
+	    <p>Total de preguntas</p>
+        <ul>
+	        <li><label>Sin datos</label></li>
+        </ul>
+
+        <h1 class="gestion-preguntas"><b>GESTIÓN DE PREGUNTAS</b></h1>
+        <h3 class="centro"><b>Alta de preguntas</b></h3>
+        <label>Tema</label>
+        <select name="tema" class="select"></select>
+        <label>Nivel</label>
+        <input type="number" class="number" id="nivel">
+        <br>
+        <br>
+        <label>Texto de la pregunta</label>
+        <input type="text" id ="textoPregunta">
+        <label>Respuesta correcta</label>
+        <input type="text" id ="respuestaCorrecta">
+        <label>Respuestas incorrectas</label>
+        <input type="text" id="respuestasIncorrectas">
+        <input type="button" id="agregarPregunta" value="Agregar">
+        
+
+        <h3 class="centro"><b>Datos generales de preguntas</b></h3>
+        <p>Total de preguntas registradas: 
+            <label id="totalPreguntas">0</label> preguntas
+        </p>
+        <p>Máximo puntaje obtenido por un jugador: 
+            <label id="puntaje">sin datos</label>
+        </p>
+        <p>Preguntas registradas: </p>
+        <form>
+            <fieldset>
+                <label id="creciente">
+                    <input type="radio" id="radioButton1" name="orden" checked> Orden nombre tema creciente/nivel creciente
+                </label>
+                <label id="decreciente">
+                    <input type="radio" id="radioButton2" name="orden"> Orden nombre tema decreciente/nivel creciente
+                </label>
+            </fieldset>
+        </form>
+        <br>
+        <br>
+        <table class="datos-preguntas">
+            <thead>
+                <tr>
+                    <th><b>Nombre del tema</b></th>
+                    <th><b>Nivel</b></th> 
+                    <th><b>Texto de la pregunta</b></th>
+                    <th><b>Respuesta correcta</b></th> 
+                    <th><b>Respuestas incorrectas</b></th> 
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </article>  
+
+    <section>
+        <h2 id="juego" class="juego"><b>¡A JUGAR!</b></h2>
+        <h3 class="centro"><b>Configuración</b></h3>
+        <label id="temaAElegir">Tema a elegir</label>
+        <select name="temaAElegir" class="select"></select>
+        <label id="nivelDelJuego">Nivel del juego</label>
+        <input type="number" class="number" id="nivelDelJuegoNumero" value="1">
+        <input type="button" id="botonJugar" value="Jugar">
+
+        <h3 class="centro"><b>Juego</b></h3>
+        <p>Puntaje acumulado en esta partida: 
+            <label id="ultimoPuntaje">0</label>
+        </p>
+        <p>La pregunta es...!</p>
+        <p>
+            <p class="textoPregunta"><input type="text" class="pregunta" value="TEXTO DE LA PREGUNTA"></p>
+            <div class="botones">
+                <input type="button" class="btn" id="buttonRespuesta1" value="Respuesta 1">
+                &nbsp;
+                &nbsp;
+                <input type="button" class="btn" id="buttonRespuesta2" value="Respuesta 2">
+                &nbsp;
+                &nbsp;
+                <input type="button" class="btn" id="buttonRespuesta3" value="Respuesta 3">
+            </div>
+            <br>
+            <br>
+            <div class="botonesJugar">
+                <input type="button" id="buttonAyuda" value="Ayuda">
+                &nbsp;
+                <input type="button" id="buttonSiguientePregunta" value="Siguiente Pregunta">
+                &nbsp;
+                <input type="button" id="buttonTerminar" value="Terminar">
+            </div>
+        <br>
+    </section>
+</body> 
+</html> 
